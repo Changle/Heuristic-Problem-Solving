@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Portfolio Game</title>
+</head>
+<body>
+	
+	
+	<div style="font-size:0.8em">
+	Link to the game description is
+	<a href="http://cs.nyu.edu/courses/fall11/CSCI-GA.2965-001/portfolio.html">here</a>
+	<ol>
+	<li>Choose game mode and rounds number</li>
+	<li>Press "Start"</li>
+	<li>Adjust the sliders, the slider will be normalized</li>
+	<li>Press "Play"</li>
+	<li>Repeat steps 3 and 4.</li>
+
+	</ol>
+	</div>
+	
+	
+	<script src="http://www.java.com/js/deployJava.js"></script>
+    <script> 
+        var attributes = { code:'Controller',  width:800, height:725} ; 
+        var parameters = {jnlp_href: 'portfolio-applet.jnlp'} ; 
+        deployJava.runApplet(attributes, parameters, '1.6'); 
+    </script>
+
+
+	<!--
+	<script src="http://java.com/js/deployJava.js"></script>
+	<script>
+	    var attributes = {
+		codebase:'.',
+	                      code:'Controller.class',
+	                      archive:'Portfolio.jar',
+	                      width:800, height:725} ;
+	    var parameters = {fontSize:16} ;
+	    var version = '1.6' ;
+	    deployJava.runApplet(attributes, parameters, version);
+	</script>
+	-->
+	<!--
+	<applet code="Controller.class"
+	        archive="Portfolio.jar"
+	        width="800" height="725">
+	Your browser is completely ignoring the <applet> tag!
+	</applet>	
+	-->
+</body>
+</html>

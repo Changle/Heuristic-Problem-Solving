@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Dr Ecco</title>
+
+<link href ="../../style.css" ref="stylesheet" type="text/css" media="screen"/>
+</head>
+<body>
+	
+	<div id ="body1">
+	<div class="post">
+		<h2 class="title">
+	<a href="http://cs.nyu.edu/courses/fall11/CSCI-GA.2965-001/portfolio.html" > Portfolio Optimization </a></h2>
+	</div>
+	
+	<SCRIPT>
+	function theWinner(){
+		if(document.portfolioapplet.getWinner()!="not set"){
+			document.location.href= "http://cims.nyu.edu/drecco/index.php?task=portfolio&winner="+document.portfolioapplet.getWinner()+"&ws=won";
+		}else{
+		alert("the winner is not known!");	
+		}
+	}
+	</SCRIPT>
+	
+	<div style="font-size:0.8em">
+	<ol>
+	<li>Choose game mode and rounds number</li>
+	<li>Press "Start"</li>
+	<li>Adjust the sliders, the slider will be normalized</li>
+	<li>Press "Play"</li>
+	<li>Repeat steps 3 and 4.</li>
+	</ol>
+	</div>
+	
+	<center>
+	<br/><br/>
+	
+	<form name = "portfolioWinner">
+		<input type="button" value="save my score" onClick="theWinner()">
+	</form>
+
+	<applet 
+			name="portfolioapplet"
+			code="Controller.class"
+	        archive="portfolio.jar"
+	        width="800" height="725">
+	Your browser is completely ignoring the <applet> tag!
+	</applet>
+	</center>
+	<br/><br/>
+	</div>	
+
+</body>
+</html>

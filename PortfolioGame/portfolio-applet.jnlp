@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="./" href="">
+    <information>
+        <title>Portfolio Game</title>
+        <vendor>Changle Wang & Zijiao Liu</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.6+"
+              href="http://java.sun.com/products/autodl/j2se" />
+        <jar href="Portfolio.jar" main="true" />
+
+    </resources>
+    <applet-desc 
+         name="Portfolio Game"
+         main-class="Controller"
+         width="800"
+         height="725">
+     </applet-desc>
+     <update check="background"/>
+</jnlp>
